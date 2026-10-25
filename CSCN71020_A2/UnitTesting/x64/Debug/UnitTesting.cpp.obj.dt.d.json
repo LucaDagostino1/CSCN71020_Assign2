@@ -128,7 +128,10 @@
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_xlocinfo_types.hpp",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\clocale",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\locale.h",
-            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\auxiliary\\vs\\unittest\\include\\cppunittestlogger.h"
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\auxiliary\\vs\\unittest\\include\\cppunittestlogger.h",
+            "c:\\users\\lucad\\onedrive - conestoga college\\cscn71020_a2\\cscn71020_a2\\bcsrec\\functions.h",
+            "c:\\users\\lucad\\onedrive - conestoga college\\cscn71020_a2\\cscn71020_a2\\bcsrec\\functions.c",
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\stdbool.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

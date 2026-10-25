@@ -80,7 +80,106 @@ namespace UnitTesting
             Assert::AreEqual(99, result);
         }
 
+        // Test the minimum allowed value.
+        TEST_METHOD(SetLength_MinimumValue_Returns1)
+        {
+            int result = setLength(1);
 
+            Assert::AreEqual(1, result);
+        }
+
+        // Test a typical valid value.
+        TEST_METHOD(SetLength_ValidValue_ReturnsInput)
+        {
+            int result = setLength(45);
+
+            Assert::AreEqual(45, result);
+        }
+
+        // Test the maximum allowed value.
+        TEST_METHOD(SetLength_MaximumValue_Returns99)
+        {
+            int result = setLength(99);
+
+            Assert::AreEqual(99, result);
+        }
+
+        // Test zero, which is below the allowed range.
+        TEST_METHOD(SetLength_Zero_Returns1)
+        {
+            int result = setLength(0);
+
+            Assert::AreEqual(1, result);
+        }
+
+        // Test a negative input.
+        TEST_METHOD(SetLength_NegativeValue_Returns1)
+        {
+            int result = setLength(-5);
+
+            Assert::AreEqual(1, result);
+        }
+
+        // Test a value immediately above the allowed range.
+        TEST_METHOD(SetLength_Value100_Returns1)
+        {
+            int result = setLength(100);
+
+            Assert::AreEqual(1, result);
+        }
+    };
+
+    TEST_CLASS(SetWidthTests)
+    {
+    public:
+
+        // Test the minimum allowed value.
+        TEST_METHOD(SetWidth_MinimumValue_Returns1)
+        {
+            int result = setWidth(1);
+
+            Assert::AreEqual(1, result);
+        }
+
+        // Test a typical valid value.
+        TEST_METHOD(SetWidth_ValidValue_ReturnsInput)
+        {
+            int result = setWidth(50);
+
+            Assert::AreEqual(50, result);
+        }
+
+        // Test the maximum allowed value.
+        TEST_METHOD(SetWidth_MaximumValue_Returns99)
+        {
+            int result = setWidth(99);
+
+            Assert::AreEqual(99, result);
+        }
+
+        // Test zero, which is below the allowed range.
+        TEST_METHOD(SetWidth_Zero_Returns1)
+        {
+            int result = setWidth(0);
+
+            Assert::AreEqual(1, result);
+        }
+
+        // Test a negative input.
+        TEST_METHOD(SetWidth_NegativeValue_Returns1)
+        {
+            int result = setWidth(-10);
+
+            Assert::AreEqual(1, result);
+        }
+
+        // Test a value immediately above the allowed range.
+        TEST_METHOD(SetWidth_Value100_Returns1)
+        {
+            int result = setWidth(100);
+
+            Assert::AreEqual(1, result);
+        }
        
     };
 }

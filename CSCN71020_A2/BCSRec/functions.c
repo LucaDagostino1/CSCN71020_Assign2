@@ -11,7 +11,7 @@ int getIntInput(char message[]) {
 }
 // read length if between 0 and 100 otherwise set it to -1
 int setLength(int input) {
-	if (input >= 0 && input < 100)
+	if (input > 0 && input < 100)
 	{
 		int length = input;
 		return length;
@@ -23,7 +23,7 @@ int setLength(int input) {
 }
 // read width if between 0 and 100 otherwise set it to -1
 int setWidth(int input) {
-	if (input > 0 && input <= 100) 
+	if (input > 0 && input < 100) 
 	{
 		int width = input;
 		return width;
@@ -31,11 +31,11 @@ int setWidth(int input) {
 	return 1;
 	
 }
-// calculate permiter
-int getPerimeter(int length, int width) {
-	int perimeter = length + length + width;
-	return perimeter;
-}
+	// calculate permiter
+	int getPerimeter(int length, int width) {
+		int perimeter = length + length + width + width;
+		return perimeter;
+	}
 // calculate area
 int getArea(int length, int width) {
 	int area = length * width;
